@@ -1,8 +1,8 @@
 ### Pitch "Little Grocery Shop"
 
-Genre: 
-Platform: Android
-Format:
+- Genre: Simulation, puzzle game
+- Platform: Android
+- Format: One handed, portrait
 
 
 
@@ -17,8 +17,14 @@ Gradually grow and improve your store by unlocking new Products. Earn XP to leve
 - Daily wheel of fortune that can earn you coins, XP, and pther prizes.
 - Lives regenerate over time, allowing players to retry challenges and earn rewards.
 
-goals:
+## goals:
 1. *Level Up:* Earn XP by keeping customers happy and serving their needs. Accumulate enough XP to level up and unlock new rewards.
 2. *Expand the Supermarket:* Reach higher levels to unlock new sections of the store, giving you more space and opportunities to grow your business.
 3. *Earn Money:* Make money by satisfying customers and running a successful supermarket. Spend your earnings on new products, upgrades, and store improvements.
-feel= 
+
+
+## Feel
+
+Restocking shelves, serving happy customers, and earning rewards create a satisfying sense of progression. Each successful mini-game brings exciting moments of achievement, while coin rewards, level-up animations, and unlockable products keep players motivated. Watching the supermarket grow with every new section and product creates a rewarding feeling of accomplishment. Playful visuals, cheerful customer reactions, and satisfying sound effects make every interaction feel fun and engaging.
+
+
