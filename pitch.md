@@ -7,7 +7,10 @@ Format:
 
 
 
-core loop= while the player do mini gamble games to refill the shelfs the costumers enter the shop, searching what they need, pay and exit. 
+## Core Loop
+A supermarket simulator where you are in charge of operating it. In order to refill the shelves with good for the costumers, the player needs to play different types of mini-games, whitch
+
+While the player do mini gamble games to refill the shelfs the costumers enter the shop, searching what they need, pay and exit. 
 meta= place in the shops with new products that need to be unlocks.
 why come back? 
 who and when=
