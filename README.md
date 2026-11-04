@@ -4,4 +4,16 @@ Team: [Yael Rosenblat] · [Chen Weiss] · [May Solomon] Course: Mobile Game Deve
 
 # The game in one sentence
 
-Managing a grocery store. Ensuring the shelves are full and the customers are satisfied
+Little Grocery Store is a casual supermarket management game where players complete fun mini-games to restock shelves, satisfy customers, and grow their grocery store into a thriving supermarket.
+
+## How to open and build
+- Open the project in Unity 6 LTS.
+- File → Build Profiles → Android → Switch Platform.
+- Build and run on an Android phone.
+
+## Repo map
+| File | What it is |
+| --- | --- |
+| `pitch.md` | One-page pitch of the game |
+| `DECISIONS.md` | Every real decision the team made, and why |
+| `AGENTS.md` | Context for AI coding tools: architecture, rules, conventions |
