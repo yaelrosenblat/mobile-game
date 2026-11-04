@@ -14,9 +14,11 @@ A supermarket simulator where players take charge of running and expanding their
 Gradually grow and improve your store by unlocking new Products. Earn XP to level up and unlock new products, rewards, and features. Purchases for double rewards, extra mini-game attempts, or faster progression. Complete milestones and challenges to earn special rewards and unlock new content. Spend coins on new items, improvements, and upgrades that make running the supermarket more rewarding.
 
 ## why come back? 
-who and when=
+- Daily wheel of fortune that can earn you coins, XP, and pther prizes.
+- Lives regenerate over time, allowing players to retry challenges and earn rewards.
+
 goals:
-1. level up. the player get xp for every happy costumre
-2. expend the shops. with higher level you can unlock more parts in the shop
-3. earn money. 
+1. *Level Up:* Earn XP by keeping customers happy and serving their needs. Accumulate enough XP to level up and unlock new rewards.
+2. *Expand the Supermarket:* Reach higher levels to unlock new sections of the store, giving you more space and opportunities to grow your business.
+3. *Earn Money:* Make money by satisfying customers and running a successful supermarket. Spend your earnings on new products, upgrades, and store improvements.
 feel= 
