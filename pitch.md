@@ -15,7 +15,7 @@ Players then place the products on shelves, choose how to arrange their store, a
 
 The loop is: play a mini-game → receive products → arrange and fill shelves → complete goals → earn coins and XP → expand the store.
 
-The main objective is to fill and develop the store. There is no move-limit sorting puzzle or customer-service requirement.
+The main objective is to fill and develop the store. 
 
 ## Meta
 
@@ -61,7 +61,7 @@ The store provides a visible record of progress: empty shelves gradually fill wi
 For our three-person team, we propose:
 
 - One store screen with drag-and-drop product placement.
-- Three short product-reward mini-games: a prize wheel, a roulette-style spinner, and a scratch card.
+- Three short product-reward mini-games: a prize wheel,a slot machine, and a scratch card.
 - Four store progression milestones with increasingly demanding shelf-filling goals.
 - A coin and XP progression system.
 - Unlockable shelves, product types, and store upgrades.
