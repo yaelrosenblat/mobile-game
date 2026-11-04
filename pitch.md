@@ -1,3 +1,12 @@
+### Pitch "Little Grocery Shop"
+
+Genre: 
+Platform: Android
+Format:
+
+
+
+
 core loop= while the player do mini gamble games to refill the shelfs the costumers enter the shop, searching what they need, pay and exit. 
 meta= place in the shops with new products that need to be unlocks.
 why come back? 
