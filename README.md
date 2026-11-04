@@ -1,10 +1,11 @@
 # Little Grocery Store
 
-Team: [Yael Rosenblat] · [Chen Weiss] · [May Solomon] Course: Mobile Game Development, Shenkar
+**Team members:** Yael Rosenblat, Chen Weiss, May Solomon  
+**Course:** Mobile Game Development, Shenkar
 
-# The game in one sentence
+## The Game in One Sentence
 
-Little Grocery Store is a casual supermarket management game where players complete fun mini-games to restock shelves, satisfy customers, and grow their grocery store into a thriving supermarket.
+Little Grocery Store is a hybrid-casual Android game where players collect products through a prize wheel, a slot machine, and scratch cards, then arrange and fill shelves to grow their grocery store.
 
 ## How to open and build
 - Open the project in Unity 6 LTS.
