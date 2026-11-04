@@ -24,7 +24,6 @@ Gradually grow and improve your store by unlocking new Products. Earn XP to leve
 
 
 ## Feel
-
 Restocking shelves, serving happy customers, and earning rewards create a satisfying sense of progression. Each successful mini-game brings exciting moments of achievement, while coin rewards, level-up animations, and unlockable products keep players motivated. Watching the supermarket grow with every new section and product creates a rewarding feeling of accomplishment. Playful visuals, cheerful customer reactions, and satisfying sound effects make every interaction feel fun and engaging.
 
 
