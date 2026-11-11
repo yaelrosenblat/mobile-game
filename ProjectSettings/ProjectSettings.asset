@@ -701,8 +701,8 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Little Grocery Store
-  metroPackageVersion: 
+  metroPackageName: LittleGroceryStore
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -710,7 +710,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: Little Grocery Store
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Little Grocery Store
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
