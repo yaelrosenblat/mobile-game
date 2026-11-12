@@ -282,8 +282,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 162743886}
-        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
-        m_MethodName: LoadLevelScene
+        m_TargetAssemblyTypeName: ScreenFlow, Assembly-CSharp
+        m_MethodName: LoadScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -372,9 +372,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 162743883}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8165455d376c6f4f919b43a7b2244b2, type: 3}
+  m_Script: {fileID: 11500000, guid: 4777ac3de460b70459ef6d54ef50e30a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ButtonManager
+  m_EditorClassIdentifier: Assembly-CSharp::ScreenFlow
 --- !u!1 &412530481
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,7 +726,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -138, y: 1031}
+  m_AnchoredPosition: {x: -138, y: 895}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1283423988
