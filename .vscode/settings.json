@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "mobile-game.slnx"
+    "dotnet.defaultSolution": "Little Grocery Store.slnx"
 }
