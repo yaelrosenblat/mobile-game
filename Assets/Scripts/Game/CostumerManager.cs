@@ -5,7 +5,7 @@ public class CostumerManager : MonoBehaviour
 {
     private RectTransform rectTransform;
 
-    private float speed = 900f;
+    private float speed = 400f;
 
     private int flag = 0;
 
