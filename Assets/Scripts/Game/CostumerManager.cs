@@ -1,72 +1,30 @@
 
+using System;
 using UnityEngine;
 
+[RequireComponent(typeof(CustomerMovement))]
 public class CostumerManager : MonoBehaviour
 {
-    private RectTransform rectTransform;
+    private CustomerMovement movement;
 
-    private float speed = 400f;
+    public event Action<CostumerManager> Finished;
 
-    private int flag = 0;
-
-    private Vector2 firstPosition = new Vector2(371, -736);
-
-    private Vector2[] path = new Vector2[]
+    private void Awake()
     {
-        new Vector2(371, 507),
-        new Vector2(-335, 507),
-        new Vector2(371, 507),
-        new Vector2(371, -736)
-    };
-
-    void Start()
-    {
-        rectTransform = GetComponent<RectTransform>();
-
-        // Set the starting position
-        rectTransform.anchoredPosition = firstPosition;
+        movement = GetComponent<CustomerMovement>();
+        movement.RouteCompleted += OnRouteCompleted;
     }
 
-    void Update()
+    private void OnRouteCompleted()
     {
-        // Move towards the current destination
-        rectTransform.anchoredPosition = Vector2.MoveTowards(
-            rectTransform.anchoredPosition,
-            path[flag],
-            speed * Time.deltaTime
-        );
+        Finished?.Invoke(this);
+    }
 
-        // Check if the customer reached the destination
-        if (Vector2.Distance(rectTransform.anchoredPosition, path[flag]) < 0.01f)
+    private void OnDestroy()
+    {
+        if (movement != null)
         {
-            // Move to the next point
-            flag++;
-
-            // Restart the path when reaching the last point
-            if (flag >= path.Length)
-            {
-                flag = 0;
-            }
-
-            // Rotate the customer
-            switch (flag)
-            {
-                case 0:
-                    rectTransform.rotation = Quaternion.Euler(0, 0, 90);
-                    break;
-
-                case 1:
-                    rectTransform.rotation = Quaternion.Euler(0, 0, 180);
-                    break;
-
-                case 2:
-                    rectTransform.rotation = Quaternion.Euler(0, 0, 0);
-                    break;
-
-                case 3:
-                    rectTransform.rotation = Quaternion.Euler(0, 0, 90);
-                    break;
-            }
+            movement.RouteCompleted -= OnRouteCompleted;
         }
     }
 }
