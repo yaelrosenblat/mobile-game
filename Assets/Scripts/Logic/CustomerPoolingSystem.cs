@@ -5,13 +5,13 @@ using UnityEngine;
 public class CustomerPoolingSystem : MonoBehaviour
 {
     [Header("References")]
-    [SerializeField] private CostumerManager customerPrefab;
+    [SerializeField] private CustomerManager customerPrefab;
 
     [Header("Pool Settings")]
     [SerializeField, Min(1)] private int poolSize = 5;
 
-    private readonly List<CostumerManager> customers =
-        new List<CostumerManager>();
+    private readonly List<CustomerManager> customers =
+        new List<CustomerManager>();
 
     private void Awake()
     {
@@ -32,7 +32,7 @@ public class CustomerPoolingSystem : MonoBehaviour
     {
         for (int i = 0; i < poolSize; i++)
         {
-            CostumerManager customer = Instantiate(
+            CustomerManager customer = Instantiate(
                 customerPrefab,
                 transform
             );
@@ -47,9 +47,9 @@ public class CustomerPoolingSystem : MonoBehaviour
         );
     }
 
-    public CostumerManager GetCustomer()
+    public CustomerManager GetCustomer()
     {
-        foreach (CostumerManager customer in customers)
+        foreach (CustomerManager customer in customers)
         {
             if (!customer.gameObject.activeSelf)
             {
@@ -60,7 +60,7 @@ public class CustomerPoolingSystem : MonoBehaviour
         return null;
     }
 
-    public void ReturnCustomer(CostumerManager customer)
+    public void ReturnCustomer(CustomerManager customer)
     {
         if (customer == null || !customers.Contains(customer))
         {

@@ -565,7 +565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ce188b1c64e2dd44801eef0fc976047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CustomerPoolingSystem
-  customerPrefab: {fileID: 3556136615747368025, guid: 8dc41558482b6864f98e6662391cbba0, type: 3}
+  customerPrefab: {fileID: 876064173866346484, guid: 74488599faf7fa543aade80566cd8282, type: 3}
   poolSize: 5
 --- !u!1 &901106734
 GameObject:

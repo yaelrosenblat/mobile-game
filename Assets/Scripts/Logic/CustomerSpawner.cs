@@ -36,8 +36,8 @@ public class CustomerSpawner : MonoBehaviour
     private float currentSpawnDelay;
     private Coroutine spawnCoroutine;
 
-    private readonly HashSet<CostumerManager> activeCustomers =
-        new HashSet<CostumerManager>();
+    private readonly HashSet<CustomerManager> activeCustomers =
+        new HashSet<CustomerManager>();
 
     private void Start()
     {
@@ -112,7 +112,7 @@ public class CustomerSpawner : MonoBehaviour
     {
         while (true)
         {
-            CostumerManager customer = poolingSystem.GetCustomer();
+            CustomerManager customer = poolingSystem.GetCustomer();
 
             if (customer == null)
             {
@@ -155,7 +155,7 @@ public class CustomerSpawner : MonoBehaviour
         }
     }
 
-    private void OnCustomerFinished(CostumerManager customer)
+    private void OnCustomerFinished(CustomerManager customer)
     {
         if (!activeCustomers.Remove(customer))
             return;
@@ -181,7 +181,7 @@ public class CustomerSpawner : MonoBehaviour
             levelManager.OnLevelChanged -= UpdateSpawnDelay;
         }
 
-        foreach (CostumerManager customer in activeCustomers)
+        foreach (CustomerManager customer in activeCustomers)
         {
             if (customer == null)
                 continue;

@@ -1,13 +1,12 @@
-
 using System;
 using UnityEngine;
 
 [RequireComponent(typeof(CustomerMovement))]
-public class CostumerManager : MonoBehaviour
+public class CustomerManager : MonoBehaviour
 {
     private CustomerMovement movement;
 
-    public event Action<CostumerManager> Finished;
+    public event Action<CustomerManager> Finished;
 
     private void Awake()
     {
