@@ -11,7 +11,11 @@ public class Bootstrap : MonoBehaviour
 
         // Start every service here, in order (next follow-along)
 
+                // Initialize services in order
         Services.Save = new PlayerPrefsSaveService();
+        Services.Settings = new PlayerPrefsSettingsService();
+
+        //Services.Save = new PlayerPrefsSaveService();
         SceneManager.LoadScene("Home");      // only now: the first screen
     }
 }
