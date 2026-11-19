@@ -7,6 +7,7 @@ public class PlayerPrefsSettingsService : ISettingsService
 
     public bool SoundOn
     {
+        // the sound is enabled by default when no saved preference exists.
         get => PlayerPrefs.GetInt(SoundKey, 1) == 1;
 
         set
