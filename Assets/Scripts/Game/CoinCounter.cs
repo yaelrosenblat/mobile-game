@@ -38,9 +38,10 @@ public class CoinCounter : MonoBehaviour
         Show();
     }
 
-    private void Show()
+    public void Show()
     {
         if (label != null)
             label.text = Services.Save.GetInt("coins", 0).ToString();
     }
+    
 }

@@ -23,11 +23,9 @@ public class LevelManager : MonoBehaviour
         CurrentLevel++;
 
         Services.Save.SetInt(LevelKey, CurrentLevel);
-
+        Services.Save.SetInt("level_reward_claimed", 0);
         OnLevelChanged?.Invoke(CurrentLevel);
 
-        /*Debug.Log(
-            $"<color=cyan>LEVEL UP: {CurrentLevel}</color>"
-        );*/
+
     }
 }
