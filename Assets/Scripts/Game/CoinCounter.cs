@@ -1,20 +1,46 @@
-// CoinCounter.cs (Assets/Scripts/Game): on your coin text in the HUD
+
 using TMPro;
 using UnityEngine;
 
-
 public class CoinCounter : MonoBehaviour
 {
-    [SerializeField] TMP_Text label;         // drag your coin text here
+    [SerializeField] private TMP_Text label;
 
-    void Start() => Show();
-
-    public void Add(int amount)              // a button: On Click () → CoinCounter.Add, 10
+    private void Start()
     {
-        Services.Save.SetInt("coins", Services.Save.GetInt("coins") + amount);
         Show();
     }
 
-    void Show() => label.text = Services.Save.GetInt("coins").ToString();
+    // Call this when the player completes a level.
+    public void AddLevelReward()
+    {
+        const string rewardKey = "level_reward_claimed";
 
+        if (Services.Save.GetInt(rewardKey, 0) == 1)
+            return;
+
+        int reward = Services.Config.Economy.coinsPerLevel;
+        int currentCoins = Services.Save.GetInt("coins", 0);
+
+        Services.Save.SetInt("coins", currentCoins + reward);
+        Services.Save.SetInt(rewardKey, 1);
+
+        Show();
+    }
+
+    // Call this when the player collects a daily gift.
+    public void AddDailyGift()
+    {
+        int reward = Services.Config.Economy.dailyGift;
+        int currentCoins = Services.Save.GetInt("coins", 0);
+
+        Services.Save.SetInt("coins", currentCoins + reward);
+        Show();
+    }
+
+    private void Show()
+    {
+        if (label != null)
+            label.text = Services.Save.GetInt("coins", 0).ToString();
+    }
 }
