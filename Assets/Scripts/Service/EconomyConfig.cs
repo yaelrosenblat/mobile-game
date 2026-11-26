@@ -13,9 +13,12 @@ public class EconomyConfig : ScriptableObject
     public float upgradeGrowth = 1.5f;
     public int upgradeMaxLevel = 10;
 
+    [Header("Customer Upgrade")]
+    public int customersPerUpgrade = 1;
+
     // Price of the next upgrade: base × growth, once per level bought. Same as the sheet.
     public int UpgradeCost(int level) =>
         Mathf.RoundToInt(upgradeBaseCost * Mathf.Pow(upgradeGrowth, level));
 
-    
+
 }

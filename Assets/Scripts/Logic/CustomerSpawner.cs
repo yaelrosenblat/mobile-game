@@ -31,7 +31,7 @@ public class CustomerSpawner : MonoBehaviour
     private float spawnDelayDecrease = 0.5f;
 
     [SerializeField, Min(0.1f)]
-    private float minimumSpawnDelay = 1f;
+    private float minimumSpawnDelay = 0.5f;
 
     private float currentSpawnDelay;
     private Coroutine spawnCoroutine;

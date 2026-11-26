@@ -25,12 +25,19 @@ public class CustomerPoolingSystem : MonoBehaviour
             return;
         }
 
-        CreatePool();
+        int upgradeLevel = Services.Save.GetInt("upgrade_level", 0);
+
+        int extraCustomers =
+            upgradeLevel * Services.Config.Economy.customersPerUpgrade;
+
+        int totalPoolSize = poolSize + extraCustomers;
+
+        CreatePool(totalPoolSize);
     }
 
-    private void CreatePool()
+    private void CreatePool(int totalSize)
     {
-        for (int i = 0; i < poolSize; i++)
+        for (int i = 0; i < totalSize; i++)
         {
             CustomerManager customer = Instantiate(
                 customerPrefab,
@@ -63,11 +70,22 @@ public class CustomerPoolingSystem : MonoBehaviour
     public void ReturnCustomer(CustomerManager customer)
     {
         if (customer == null || !customers.Contains(customer))
-        {
             return;
-        }
 
         customer.gameObject.SetActive(false);
+    }
+
+    public void AddCustomer()
+    {
+        CustomerManager customer = Instantiate(
+            customerPrefab,
+            transform
+        );
+
+        customer.gameObject.SetActive(false);
+        customers.Add(customer);
+
+        Debug.Log("Customer pool increased: " + customers.Count);
     }
 
     public int PoolSize => customers.Count;

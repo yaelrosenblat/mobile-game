@@ -1,38 +1,36 @@
 
-using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UpgradeUI : MonoBehaviour
 {
     [SerializeField] private UpgradeManager upgradeManager;
-    [SerializeField] private TMP_Text priceText;
-    [SerializeField] private TMP_Text buttonText;
-    [SerializeField] private CoinCounter coinCounter;
+    [SerializeField] private Button upgradeButton;
+    [SerializeField] private CustomerPoolingSystem poolingSystem;
 
     private void Start()
     {
-        Refresh();
+        RefreshButton();
     }
 
     public void Buy()
     {
-        if (upgradeManager.BuyUpgrade())
-        {
-            Refresh();
-            coinCounter.SendMessage("Show", SendMessageOptions.DontRequireReceiver);
-        }
+        if (!upgradeManager.BuyUpgrade())
+            return;
+
+        poolingSystem.AddCustomer();
+
+        upgradeButton.interactable = false;
+        upgradeButton.image.color = Color.gray;
     }
 
-    public void Refresh()
+    private void RefreshButton()
     {
-        if (upgradeManager.CurrentLevel >= Services.Config.Economy.upgradeMaxLevel)
-        {
-            priceText.text = "MAX LEVEL";
-            buttonText.text = "MAX LEVEL";
-            return;
-        }
+        bool alreadyUpgraded = upgradeManager.CurrentLevel > 0;
 
-        priceText.text = "Cost: " + upgradeManager.GetNextUpgradeCost();
-        buttonText.text = "BUY UPGRADE";
+        upgradeButton.interactable = !alreadyUpgraded;
+
+        if (alreadyUpgraded)
+            upgradeButton.image.color = Color.gray;
     }
 }

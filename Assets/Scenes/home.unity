@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 36905461}
   m_Layer: 5
   m_Name: Image
-  m_TagString: Untagged
+  m_TagString: background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -230,10 +230,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1573862872}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 291, y: -75.246}
-  m_SizeDelta: {x: 2007.8738, y: 2319.4}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 291, y: 116.74887}
+  m_SizeDelta: {x: 2007.8738, y: 583.3896}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &36905461
 MonoBehaviour:
@@ -307,9 +307,9 @@ RectTransform:
   - {fileID: 2028353761}
   m_Father: {fileID: 1573862872}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 1103}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 44}
   m_SizeDelta: {x: 400, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &58403899
@@ -525,6 +525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4777ac3de460b70459ef6d54ef50e30a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScreenFlow
+  upgradeShopPopup: {fileID: 2145372568}
 --- !u!1 &322157188
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,8 +611,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 162743886}
         m_TargetAssemblyTypeName: ScreenFlow, Game
-        m_MethodName: PopUpControll
-        m_Mode: 5
+        m_MethodName: ToggleUpgradeShop
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1403,9 +1404,9 @@ RectTransform:
   - {fileID: 583435756}
   m_Father: {fileID: 1573862872}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 881}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -178}
   m_SizeDelta: {x: 400, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &721375806
@@ -1454,8 +1455,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 162743886}
         m_TargetAssemblyTypeName: ScreenFlow, Game
-        m_MethodName: PopUpControll
-        m_Mode: 5
+        m_MethodName: ToggleUpgradeShop
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
