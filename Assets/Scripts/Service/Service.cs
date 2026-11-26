@@ -7,5 +7,8 @@ public static class Services
 
     public static ISettingsService Settings { get; set; } 
 
+    public static IConfigService Config { get; set; }
+
+
 }
 

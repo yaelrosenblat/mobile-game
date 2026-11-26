@@ -147,9 +147,9 @@ public class CustomerSpawner : MonoBehaviour
                 failedRouteWait
             );
 
-            Debug.Log(
+            /*Debug.Log(
                 "<color=cyan>CUSTOMER ACTIVATED</color>"
-            );
+            );*/
 
             yield return new WaitForSeconds(currentSpawnDelay);
         }
@@ -163,9 +163,9 @@ public class CustomerSpawner : MonoBehaviour
         customer.Finished -= OnCustomerFinished;
         poolingSystem.ReturnCustomer(customer);
 
-        Debug.Log(
+        /*Debug.Log(
             "<color=yellow>CUSTOMER RETURNED TO POOL</color>"
-        );
+        );*/
     }
 
     private void StopCurrentSequence()
