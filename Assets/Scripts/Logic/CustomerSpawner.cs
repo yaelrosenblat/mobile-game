@@ -23,15 +23,15 @@ public class CustomerSpawner : MonoBehaviour
     [SerializeField, Min(0f)]
     private float failedRouteWait = 3f;
 
-    [Header("Spawn Settings")]
-    [SerializeField, Min(0.1f)]
-    private float initialSpawnDelay = 5f;
+    // [Header("Spawn Settings")]
+    // [SerializeField, Min(0.1f)]
+    // private float initialSpawnDelay = 2f;
 
-    [SerializeField, Min(0f)]
-    private float spawnDelayDecrease = 0.5f;
+    // [SerializeField, Min(0f)]
+    // private float spawnDelayDecrease = 0.5f;
 
-    [SerializeField, Min(0.1f)]
-    private float minimumSpawnDelay = 0.5f;
+    // [SerializeField, Min(0.1f)]
+    // private float minimumSpawnDelay = 0.5f;
 
     private float currentSpawnDelay;
     private Coroutine spawnCoroutine;
@@ -66,7 +66,8 @@ public class CustomerSpawner : MonoBehaviour
 
         StopCurrentSequence();
 
-        levelManager.OnLevelChanged += UpdateSpawnDelay;
+        //levelManager.OnLevelChanged += UpdateSpawnDelay;
+        
 
         UpdateSpawnDelay(levelManager.CurrentLevel);
 
@@ -96,11 +97,13 @@ public class CustomerSpawner : MonoBehaviour
 
     private void UpdateSpawnDelay(int level)
     {
-        currentSpawnDelay = Mathf.Max(
-            minimumSpawnDelay,
-            initialSpawnDelay -
-            (level - 1) * spawnDelayDecrease
-        );
+        // currentSpawnDelay = Mathf.Max(
+        //     minimumSpawnDelay,
+        //     initialSpawnDelay -
+        //     (level - 1) * spawnDelayDecrease
+        // );
+
+        currentSpawnDelay = 0.5f;
 
         Debug.Log(
             $"<color=cyan>LEVEL {level} | " +

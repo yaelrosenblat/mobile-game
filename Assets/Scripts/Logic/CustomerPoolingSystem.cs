@@ -8,7 +8,7 @@ public class CustomerPoolingSystem : MonoBehaviour
     [SerializeField] private CustomerManager customerPrefab;
 
     [Header("Pool Settings")]
-    [SerializeField, Min(1)] private int poolSize = 2;
+    private int poolSize = 2;
 
     private readonly List<CustomerManager> customers =
         new List<CustomerManager>();
@@ -83,7 +83,7 @@ public class CustomerPoolingSystem : MonoBehaviour
         );
 
         customer.gameObject.SetActive(false);
-        customers.Add(customer);
+        poolSize++;
 
         Debug.Log("Customer pool increased: " + customers.Count);
     }

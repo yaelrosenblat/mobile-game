@@ -41,3 +41,17 @@ flowchart TD
 3. Bootstrap initializes `PlayerPrefsSettingsService`.
 4. Bootstrap loads the Home scene.
 5. Gameplay systems access services through the `Services` class.
+
+
+## Economy Sheet
+
+Our economy configuration includes:
+- Level completion rewards
+- Daily gifts
+- Upgrade costs and progression
+- Customer capacity upgrades
+
+[View our Economy Sheet](https://docs.google.com/spreadsheets/d/11UQHof8FsOIq1-wzbGSrVRxJUgRclG8tPhEiRDfmBps/edit?gid=0#gid=0)
+
+Economy balance check: Yes
+Economy progression check: Yes
