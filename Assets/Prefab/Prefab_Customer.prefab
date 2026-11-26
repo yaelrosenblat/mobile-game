@@ -37,7 +37,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 250, y: 200}
+  m_SizeDelta: {x: 400, y: 4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2532154807857789241
 CanvasRenderer:
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4066236575460678073, guid: b4ffbfd0ff3c28041bcdd2b8d7a4f8f3, type: 3}
+  m_Sprite: {fileID: -6810844881446839830, guid: ccf7b7637cdcb8c4895049de6ca07e21, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -101,4 +101,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2463b623298168a4f965c879e8ec5c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Game::CustomerMovement
-  speed: 400
+  customerWidth: 375
+  customerHeight: 450
+  speed: 500

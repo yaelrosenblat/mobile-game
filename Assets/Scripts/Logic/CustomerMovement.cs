@@ -5,8 +5,14 @@ using UnityEngine;
 [RequireComponent(typeof(RectTransform))]
 public class CustomerMovement : MonoBehaviour
 {
+
+    [Header("Appearance")]
+    [SerializeField] private float customerWidth = 100f;
+    [SerializeField] private float customerHeight = 150f;
+
     [Header("Movement")]
     [SerializeField, Min(1f)]
+
     private float speed = 400f;
     private float pauseDuration;
 
@@ -27,6 +33,15 @@ public class CustomerMovement : MonoBehaviour
     {
         rectTransform = GetComponent<RectTransform>();
         parentTransform = rectTransform.parent;
+        ApplySize();
+    }
+
+    private void ApplySize()
+    {
+        rectTransform.sizeDelta = new Vector2(
+            customerWidth,
+            customerHeight
+        );
     }
 
     public void StartRoute(
