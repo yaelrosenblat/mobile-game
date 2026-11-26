@@ -39,6 +39,15 @@ public class SafeAreaFitter : MonoBehaviour
     {
         if (Screen.width <= 0 || Screen.height <= 0)
             return;
+        if (gameObject.CompareTag("background"))
+        {
+            panel.anchorMin = Vector2.zero;
+            panel.anchorMax = Vector2.one;
+            panel.anchoredPosition = Vector2.zero;
+            panel.offsetMin = Vector2.zero;
+            panel.offsetMax = Vector2.zero;
+            return;
+        }
 
         Rect safe = Screen.safeArea;
 

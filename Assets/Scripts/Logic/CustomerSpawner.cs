@@ -168,7 +168,7 @@ public class CustomerSpawner : MonoBehaviour
         );*/
     }
 
-    private void StopCurrentSequence()
+    public void StopCurrentSequence()
     {
         if (spawnCoroutine != null)
         {

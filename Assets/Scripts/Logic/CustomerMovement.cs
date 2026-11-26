@@ -147,4 +147,12 @@ public class CustomerMovement : MonoBehaviour
         isMoving = false;
         currentPath = null;
     }
+
+    public void StopMovement()
+    {
+
+        isMoving = false;
+        currentPath = null;
+
+    }
 }

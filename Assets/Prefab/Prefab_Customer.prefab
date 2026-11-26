@@ -103,4 +103,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Game::CustomerMovement
   customerWidth: 375
   customerHeight: 450
-  speed: 500
+  speed: 1500

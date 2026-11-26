@@ -7,6 +7,8 @@ public class DayManager : MonoBehaviour
     [Header("Day Settings")]
     [SerializeField] private float dayDuration = 20f;
     public GameObject endOfDayPanel;
+    private CustomerMovement customerMovement;
+    private CustomerSpawner customerSpawner;
 
     public bool dayEnded;
 
@@ -29,5 +31,10 @@ public class DayManager : MonoBehaviour
 
         dayEnded = true;
         endOfDayPanel.SetActive(true);
+        customerMovement = FindAnyObjectByType<CustomerMovement>();
+        customerSpawner = FindAnyObjectByType<CustomerSpawner>();
+        customerMovement.StopMovement();
+        customerSpawner.StopCurrentSequence();
+
     }
 }
