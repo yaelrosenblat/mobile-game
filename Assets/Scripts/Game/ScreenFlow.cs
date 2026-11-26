@@ -4,18 +4,23 @@ using UnityEngine.SceneManagement;
 public class ScreenFlow : MonoBehaviour
 {
 
+    [SerializeField] private GameObject upgradeShopPopup;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void LoadScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
     }
 
-    public void PopUpControll(string popUpName)
+    public void ToggleUpgradeShop()
     {
-        GameObject popUp = GameObject.Find(popUpName);
-        if (popUp != null)
+        if (upgradeShopPopup != null)
         {
-            popUp.SetActive(!popUp.activeSelf);
+            upgradeShopPopup.SetActive(!upgradeShopPopup.activeSelf);
+        }
+        else
+        {
+            Debug.LogError("Upgrade shop popup is not assigned!");
         }
     }
 }
