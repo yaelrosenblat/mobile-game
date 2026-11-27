@@ -51,7 +51,7 @@ Our economy configuration includes:
 - Upgrade costs and progression
 - Customer capacity upgrades
 
-[View our Economy Sheet](https://docs.google.com/spreadsheets/d/11UQHof8FsOIq1-wzbGSrVRxJUgRclG8tPhEiRDfmBps/edit?gid=0#gid=0)
+[View Little Grocery Store Economy Sheet](https://docs.google.com/spreadsheets/d/11UQHof8FsOIq1-wzbGSrVRxJUgRclG8tPhEiRDfmBps/edit?usp=sharing)
 
 Economy balance check: Yes
 Economy progression check: Yes
