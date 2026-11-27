@@ -16,6 +16,7 @@ The following visual assets were sourced online:
 
 - **Home Screen Background Image:** Online image. Original source: https://www.pinterest.com/pin/352828952080788253/
 - **Popup Background Image:** Online image. Original source: https://www.pinterest.com/pin/676102962857620123/
+- **Home Screen Image Reference:** Online image. Original source: https://store.steampowered.com/app/2670630/Supermarket_Simulator/
 
 ### Notes
 All original UI elements and artwork were created for Little Grocery Store by the development team. Online assets are credited to their respective sources.
