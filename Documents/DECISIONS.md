@@ -20,3 +20,16 @@
 **AI:** Used ChatGPT to help plan the service architecture and implementation.
 
 **Who:** Yael Rosenblat, Chen Weiss, May Solomon.
+
+
+## 2026-11-26 — Manage economy values through a configuration service
+
+**Options:** Hardcode economy values (rewards, upgrade prices, and progression numbers) in gameplay scripts; store economy values in a separate configuration asset accessed through a dedicated service.
+
+**Chose:** Use an `EconomyConfig` ScriptableObject to store economy values and an `IConfigService` to provide access to the configuration through `Services.Config.Economy`. Bootstrap initializes the configuration service after the Save service.
+
+**Why:** Keeps economy numbers in one central location instead of spreading them across gameplay scripts. This makes balancing and adjusting the game's economy easier without changing gameplay code. It also keeps the architecture organized by separating configuration data from game logic.
+
+**AI:** Used ChatGPT to help document and explain the configuration service architecture decision.
+
+**Who:** Yael Rosenblat, Chen Weiss, May Solomon.
